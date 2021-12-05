@@ -1,0 +1,24 @@
+name: asset_builder
+description: A builder to pack assets into dart files/code
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: '>=2.15.0 <3.0.0'
+
+dependencies:
+  analyzer: ^2.7.0
+  asset_data:
+    git:
+      url: git@github.com:KayZGames/asset_data.git
+      ref: tags/1.0.0
+  build: ^2.1.1
+  glob: ^2.0.2
+  path: ^1.8.0
+  source_gen: ^1.1.1
+
+dev_dependencies:
+  build_runner: ^2.1.5
+  build_test: ^2.1.4
+  mockito: ^5.0.16
+  test: ^1.19.4
