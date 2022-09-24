@@ -10,7 +10,7 @@ dependencies:
   analyzer: '>=2.7.0 <5.0.0'
   asset_data:
     git:
-      url: git@github.com:KayZGames/asset_data.git
+      url: https://github.com/KayZGames/asset_data.git
       ref: tags/1.0.0
   build: ^2.1.1
   glob: ^2.0.2
