@@ -196,7 +196,10 @@ void mockFindAssets(MockBuildStep buildStep, String assetUri, String content) {
 Future<String> generate(
     String source, AssetGenerator generator, BuildStep buildStep) async {
   final libraryElement = await resolveSource<LibraryElement?>(
-      source, (resolver) => resolver.findLibraryByName(''));
+    source,
+    (resolver) => resolver
+        .libraryFor(AssetId('_resolve_source', 'lib/_resolve_source.dart')),
+  );
 
   return await generator.generate(LibraryReader(libraryElement!), buildStep);
 }

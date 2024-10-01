@@ -34,7 +34,7 @@ class AssetGenerator extends GeneratorForAnnotation<Asset> {
     }
 
     error(variableElement,
-        '''Asset type ${type.getDisplayString(withNullability: false)} is no FileAsset''');
+        '''Asset type ${type.getDisplayString()} is no FileAsset''');
     return '';
   }
 
